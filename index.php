@@ -4,8 +4,10 @@ require_once 'NumberGenerator.php';
 require_once 'FileManager.php';
 
 $numberGenerator = new NumberGenerator();
-$num = $numberGenerator->getNumber(1,1000);
-$fileManager = new FileManager();
+$num = $numberGenerator->getNumber(1, 1000);
 
+$fileManager = new FileManager('./file.txt');
 $fileManager->addNumToFile($num);
-echo "Number: $num\nAVG: ".$fileManager->getAverage()."\n";
+$AVG = $fileManager->getAverage();
+
+echo "Number: $num\nAVG: " . $AVG . "\n";
