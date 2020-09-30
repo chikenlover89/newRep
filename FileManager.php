@@ -16,10 +16,11 @@ class FileManager
         file_put_contents($this->path,$this->data);
     }
 
-    public function getAverage(): int
+    public function getAverage(): float
     {
         $numArr = explode(" ", $this->data);
-        return (array_sum($numArr) / (count($numArr) - 1));
+        return number_format((array_sum($numArr) / (count($numArr) - 1)),2);
     }
 
 }
+
