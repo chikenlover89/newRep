@@ -10,4 +10,4 @@ $fileManager = new FileManager('./file.txt');
 $fileManager->addNumToFile($num);
 $AVG = $fileManager->getAverage();
 
-echo "Number: $num\nAVG: " . $AVG . "\n";
+echo "Number: $num\nAVG: $AVG\n";
