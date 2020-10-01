@@ -19,7 +19,8 @@ class FileManager
     public function getAverage(): float
     {
         $numArr = explode(" ", $this->data);
-        return number_format((array_sum($numArr) / (count($numArr) - 1)),2);
+        $numArr = array_filter($numArr);
+        return number_format(array_sum($numArr) / (count($numArr)),2);
     }
 
 }
