@@ -1,0 +1,3 @@
+Snickers;95;0|
+Bounty;75;4|
+Chiken;200;95|
